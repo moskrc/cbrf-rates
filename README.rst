@@ -35,7 +35,7 @@ cbrf_rates - это модуль для скачивания курсов вал
 
 .. code-block:: python
     
-    from cbrf_rates import get_rates1
+    from cbrf_rates import get_rates
     
     rates = get_rates()
     
