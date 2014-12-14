@@ -33,20 +33,25 @@ cbrf_rates - это модуль для скачивания курсов вал
 Использование
 =============
 
-::
-    from cbrf_rates import get_rates
-
+.. code-block:: python
+    
+    from cbrf_rates import get_rates1
+    
     rates = get_rates()
     
     print rates['USD']
+    
+OrderedDict([(u'@ID', u'R01235'), (u'NumCode', u'840'), (u'CharCode', u'USD'), (u'Nominal', u'1'), (u'Name', u'Доллар США'), (u'Value', 56.8919)])
 
-    # OrderedDict([(u'@ID', u'R01235'), (u'NumCode', u'840'), (u'CharCode', u'USD'), (u'Nominal', u'1'), (u'Name', u'Доллар США'), (u'Value', 56.8919)])
-
+.. code-block:: python
+    
     print rates['USD']['Value']
 
-    # 56.8919
+56.8919
 
+.. code-block:: python
+    
     print rates['date']
 
-    # 13.12.2014
+13.12.2014
 
